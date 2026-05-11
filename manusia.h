@@ -2,7 +2,7 @@
 #define MANUSIA_H
 using namespace std;
 
-class manusia {}
+class manusia
 {
   public :
   string name;
@@ -13,7 +13,7 @@ class manusia {}
     cout << name << " Hiudp\n";
   }
   ~manusia() {
-    cout << name << " Mati\m";
+    cout << name << " Mati\n";
   }
 };
 #endif
