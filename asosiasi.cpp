@@ -28,4 +28,8 @@ class dokter {
         ~dokter(){
             cout << "Dokter\"" << nama << "\"tidak ada\n";
         }
+};
+
+void pasien::tambahDokter(dokter* pDokter){
+    daftar_dokter.push_back(pDokter);
 }
