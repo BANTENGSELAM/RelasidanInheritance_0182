@@ -44,9 +44,9 @@ void dokter::tambahPasien(pasien* pPaisen){
     daftar_pasien.push_back(pPasien);
     pPasien->tambahDokter(this);
 }
-void pasien::cetakDokter(){
-    cout << "Daftar Dokter yang menangani pasien \"" << this->nama << "\" : \n";
-    for (auto& a : daftar_dokter) { // auto digunakan dalam perualangan for untuk secara otomatis menentukan tipe data dari elemen yang diitera
+void dokter::cetakPasien(){
+    cout << "Daftar Pasien dari dokter \"" << this->nama << "\" : \n";
+    for (auto& a : daftar_pasien) { // auto digunakan dalam perualangan for untuk secara otomatis menentukan tipe data dari elemen yang diitera
         cout << a->nama << "\n";
     }
     cout << endl;
